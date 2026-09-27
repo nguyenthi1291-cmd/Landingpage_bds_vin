@@ -584,3 +584,55 @@ p {
     border-radius: 0.75rem;
   }
 }
+
+/* Page Lock Mechanism & Authentication Styles */
+body.page-locked main,
+body.page-locked footer {
+  filter: blur(7px);
+  pointer-events: none;
+  user-select: none;
+  transition: filter 0.4s ease;
+}
+
+body.page-locked {
+  overflow: hidden;
+}
+
+.auth-modal-content {
+  border-radius: 1.5rem !important;
+  overflow: hidden;
+  border: 1px solid rgba(1, 81, 54, 0.15) !important;
+}
+
+.auth-tabs {
+  background-color: #f0f4f2 !important;
+}
+
+.auth-tabs .nav-link {
+  color: #555555;
+  font-size: 0.9rem;
+  transition: var(--transition-base);
+}
+
+.auth-tabs .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.auth-tabs .nav-link.active {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  box-shadow: 0 4px 12px rgba(1, 81, 54, 0.25);
+}
+
+.user-greeting-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: rgba(1, 81, 54, 0.08);
+  border: 1px solid rgba(1, 81, 54, 0.18);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+}
+
