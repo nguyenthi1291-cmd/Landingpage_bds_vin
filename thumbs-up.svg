@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Background Circle Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAF6F0" />
+      <stop offset="100%" stop-color="#D5ECE2" />
+    </linearGradient>
+
+    <!-- Thumbs Up Hand Gradient (Logo Emerald Forest Green) -->
+    <linearGradient id="thumbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#026b47" />
+      <stop offset="100%" stop-color="#015136" />
+    </linearGradient>
+
+    <!-- Gold Accent / Cuff Gradient (Logo Yellow/Gold Leaf) -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5b842" />
+      <stop offset="100%" stop-color="#c99824" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow -->
+    <filter id="thumbShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#015136" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Outer Circle -->
+  <circle cx="60" cy="60" r="54" fill="url(#bgGrad)" stroke="#015136" stroke-width="2.5" />
+
+  <!-- Inner Subtle Ring -->
+  <circle cx="60" cy="60" r="47" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.8" />
+
+  <!-- Thumbs Up Illustration -->
+  <g filter="url(#thumbShadow)">
+    <!-- Cuff / Wrist Bar -->
+    <rect x="29" y="56" width="12" height="34" rx="4" fill="url(#goldGrad)" />
+    
+    <!-- Sleeve line -->
+    <line x1="35" y1="58" x2="35" y2="88" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.6"/>
+
+    <!-- Hand & Thumb pointing up -->
+    <path d="M44 58
+             H75
+             C78.5 58 81 60.5 80.5 63.8
+             L79.2 71.5
+             C81.2 73 81.8 75.8 81 78.2
+             C82.2 80.2 81.8 82.8 80.2 84.5
+             C80.8 86.8 79.5 89.5 76.5 90
+             H44
+             V58
+             Z" 
+          fill="url(#thumbGrad)" />
+
+    <!-- Upright Thumb -->
+    <path d="M44 59
+             V43
+             C44 38.5 47 31 52 27
+             C55.5 24.2 59 26 59 31
+             C59 36 56 42 56 47
+             L56 58
+             Z" 
+          fill="url(#thumbGrad)" />
+          
+    <!-- Finger Separation Highlight Lines -->
+    <path d="M47 66 H74" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.3" />
+    <path d="M47 74 H75" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.3" />
+    <path d="M47 82 H73" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.3" />
+
+    <!-- Thumb Highlight Accent -->
+    <path d="M52 30 C55 33 55 40 54 48" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.45"/>
+  </g>
+</svg>
